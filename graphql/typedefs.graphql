@@ -1,0 +1,15 @@
+type Weight{
+  id: Int
+  gms: Float!
+  createdAt: String
+  updatedAt:String
+}
+
+type Query {
+  getWeight: [Weight!]!
+  getWeightinMonth(month:Int!): [Weight!]!
+}
+
+type Mutation{
+  addWeight(gms:Float!): Weight!
+}

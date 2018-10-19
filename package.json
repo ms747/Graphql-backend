@@ -1,0 +1,21 @@
+{
+  "name": "backend-ql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch graphql/typedefs.graphql --watch graphql/ --watch database/ index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "graphql-yoga": "^1.16.7",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.40.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
