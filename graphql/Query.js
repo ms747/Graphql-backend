@@ -12,9 +12,9 @@ const Query = {
 	},
 	async getWeightinMonth(parent, args, ctx, info) {
 		const date = new Date();
-    const firstDay = new Date(date.getFullYear(), args.month, 1);
-    const lastDay = new Date(date.getFullYear(), args.month + 1, 0);
-    
+		const firstDay = new Date(date.getFullYear(), args.month, 1);
+		const lastDay = new Date(date.getFullYear(), args.month + 1, 0);
+
 		const wts = await Weight.findAll({
 			where: {
 				createdAt: {
